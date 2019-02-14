@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>jQuery Bootcamp</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <style>
+            #test {
+                color: blue
+            }
+            .load {
+                font-size: 42px
+            }
+            .first-new {
+                height: 50px;
+                width: 50px;
+                background-color: red
+            }
+            .second-new {
+                height: 50px;
+                width: 50px;
+                background-color: yellow
+            }
+            .target {
+                height: 50px;
+                width: 50px;
+                background-color: blue
+            }
+            #toggle-greet {
+                display: inline
+            }
+            .toggle {
+                display: inline
+            }
+            .cross-button {
+                cursor: pointer;
+                color: darkred
+            }
+        </style>
+        <p class='toggle'>Hi</p>
+        <p class='toggle' style='display:none'>Hello</p>
+        <button id='toggle-greet'>Change Greeting</button>
+        <br><br>
+        <div id='test'>
+            This changed color after DOM loads
+        </div>
+        <br>
+        <div class='first-new'></div>
+        <br>
+        <div class='second-new'></div>
+        <br>
+        <input type='submit'>
+        <br><br>
+        <div id='main'>
+            <div class='target'></div>
+        </div>
+        <br>
+        <div id='not-main'>
+            <div class='target'></div>
+        </div>
+        <br>
+        <div id='replace-div'>
+            Hi! I am in a div!
+        </div>
+        <div class='click'>CLICK ON ME!</div>
+        <br>
+        <div id='show-select'>YOU HAVE SELECTED: <span id='text-select'></span></div>
+        <select id='select-to-show'>
+            <option class='select-option' value="Volvo">Volvo</option>
+            <option class='select-option' value="Saab">Saab</option>
+            <option class='select-option' value="Mercedes">Mercedes</option>
+            <option class='select-option' value="Audi">Audi</option>
+        </select>
+        <br><br>
+        <div id='hover-text'>HOVER OVER TO SHOW/HIDE SELECT INPUT</div>
+        <select id='select-to-show' style='display:none'>
+            <option class='select-option' value="Volvo">Volvo</option>
+            <option class='select-option' value="Saab">Saab</option>
+            <option class='select-option' value="Mercedes">Mercedes</option>
+            <option class='select-option' value="Audi">Audi</option>
+        </select>
+        <br><br>
+        <a id='dead-link' href="https://google.com">GOOGLE</a>
+        <br><br>
+        <div id='parent-click'>
+            Pure Parent Content
+            <ol id='child-click'>
+                <li>Child 1</li>
+                <li>Child 2</li>
+            </ol>
+        </div>
+        <div>
+            THE MAX HEIGHT OF AN ELEMENT ON THIS PAGE IS: 
+            <span id='max-height'></span>px
+        </div>
+        <table id='colored-table'>
+            <tr>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>11</td>
+            </tr>
+            <tr>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>9</td>
+            </tr>
+            <tr>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>27</td>
+            </tr>
+        </table>
+        <br>
+        <div id='ajax-res'></div>
+        <br>
+        <table id='delete-table'>
+            <tr>
+                <th></th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td class='cross-button'>&times</td>    
+                <td>11</td>
+            </tr>
+            <tr>
+                <td class='cross-button'>&times</td> 
+                <td>10<span class='cross-button'></span></td>
+            </tr>
+            <tr>
+                <td class='cross-button'>&times</td> 
+                <td>9<span class='cross-button'></span></td>
+            </tr>
+            <tr>
+                <td class='cross-button'>&times</td> 
+                <td>13<span class='cross-button'></span></td>
+            </tr>
+            <tr>
+                <td class='cross-button'>&times</td>     
+                <td>100<span class='cross-button'></span></td>
+            </tr>
+            <tr>
+                <td class='cross-button'>&times</td> 
+                <td>27<span class='cross-button'></span></td>
+            </tr>
+        </table>
+        <br>
+        <div id='img-container'></div>
+    </body>
+    <script src='jqueryPrac.js'></script>
+</html>
